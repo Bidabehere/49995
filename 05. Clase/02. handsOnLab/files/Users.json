@@ -1,0 +1,98 @@
+[
+	{
+		"nombre": "Luis",
+		"apellido": "Sol",
+		"nombreUsuario": "luisSol",
+		"contrasena": "999e9c614e0e2d62bb6c605ae15cd7922f1865e080545ed3dc877191b545e913",
+		"id": 1,
+		"salt": "LRvQ+y62vPfl/n9fZnSGWfSbkKhuIQ6v7XIiJbP0DDQ8CExuXY3zM9LNGYzLCRrJTU9Kwndxv8Yg211xYNv1l7p4vUG6w2ixQyKxIhBxkHBY8OXGE9iV8N8Qv5zDHQ4+vKj14R0tE3sIJKtQT/iEZhYcGwdizdZjQzq6PZwXDhE="
+	},
+	{
+		"nombre": "Luis",
+		"apellido": "Sol",
+		"nombreUsuario": "luisSol",
+		"contrasena": "b11d876ea93e646111fd3db835e9f16d6881e20768e0356ad4bc16b26bba2f27",
+		"id": 2,
+		"salt": "HUftyPPN2sJpn80zQj/QvXtaMBlhNPa8FbRDotz/hiWo3xWQA/EfH24ZRQoo+DpMAyTy9RyIk8ON8xIth/IFJR7ic/YfFeF/u0xoBPxS+KWBqfsw2RR0JD4rVt4K5q3wptSoonkQAnenSeycKoKFXZmCotwcoYpUTijzFn9HFx4="
+	},
+	{
+		"nombre": "Luis",
+		"apellido": "Sol",
+		"nombreUsuario": "luisSol",
+		"contrasena": "eef067bda52da377d446ce81d2ebc987964ad9d609abea0401e627c95398d169",
+		"id": 4,
+		"salt": "vjKz37Nf3XtaAWR56CNFEeYveU01RVKtaCgTNOM0WfyQvK9OGTbIsWzC8T37s0DwlO7C38DFTEsHzvoJe3Mf6tpEBNAVZS6Zh/fmLxdHqNDtkHq1b9jzKhINx8on2iqaO1ttlCtADzaq7fvdCCjELOW3LCOf/Tm2IGBS5mxhGp8="
+	},
+	{
+		"nombre": "Luis",
+		"apellido": "Sol",
+		"nombreUsuario": "luisSol",
+		"contrasena": "f38cf642b14d23f3b4c4f1e096a465396278c81763adb5c7806261b4ecae3f5c",
+		"id": 5,
+		"salt": "wJXTN30nfNepG+aBulA0AiHIF52psiCXoLkAOHYGbgi4PKsNM/soxk7YkodO+9G27QhgSV11hgof7yPJbfSgcB4TE8GOUck+pHf6T36PrasyfGNkkteIajKjc+JGt0hgvZ50bUngz0BtFtoZwIBPDNEx6Bo3ryGigl6LVyhEOHE="
+	},
+	{
+		"nombre": "Luis",
+		"apellido": "Sol",
+		"nombreUsuario": "luisSol",
+		"contrasena": "7a083d3f4d7adf0c8a0fb518ddcea9ba22f4f61d182322ecaaacb9792ecd5464",
+		"id": 6,
+		"salt": "oERUdF0W6UHNkAq9UOtAeVRYqY+Ojm027PIbKHbSa0NtJ/M7nL6xPMy0VVHqqBI8XabfW5bSl0pqHZc2PyMBn9ArPTSziaSE1tViNlqGdqISSz8noAkv8A5gSk+djgGQuD3nlxMDB7XIkqEfWc3bHudczwzWBsb4Xvi1qpHAlRw="
+	},
+	{
+		"nombre": "Luis",
+		"apellido": "Sol",
+		"nombreUsuario": "luisSol",
+		"contrasena": "0662eba75d71083dbce87169ff2e53db3a07d69cf7a619341c06219473a8e616",
+		"id": 8,
+		"salt": "lP0xSwbYLloDhtcDu+5EAUbxAdU2JFD9rbQCk01fK4h3XwPd2iYCCDHyQAVRwGhUYQBN0HSYNr9x5AbjrHbjaYouHXg6Ase8bzQcANlDXF6VUBrAOjvLHIIAKb/ixV/eluid/fJ7aWdMWWnPL/SfWOVwyJ3iKEyhil7dpZufzNE="
+	},
+	{
+		"nombre": "Luis",
+		"apellido": "Sol",
+		"nombreUsuario": "luisSol",
+		"contrasena": "1a7454ecb7a8bad9059fbed77bd75e038a1d6ef1a28262c18f564cefac983872",
+		"id": 9,
+		"salt": "Y0ET4vEVaf8efnpLyHeGwTDEiiitvqGOi58MtzYlpEJY7qi2N1pHMip90beTnF9LgqXkhBvV2vSn4x+QCdogujtJhd8Dh4QZMKORr0XadKasiRQdf+SH2QxaD9Ce1tb73Lg+2YGUa3qAxsWvOojaHoj6fzKmSkaLU1TdBy3Qv6s="
+	},
+	{
+		"nombre": "Luis",
+		"apellido": "Sol",
+		"nombreUsuario": "luisSol",
+		"contrasena": "3340edc3639f53c84c021188f07248b2a9a18b8d1bf110e77d0e7d0c6bf88f72",
+		"id": 10,
+		"salt": "nQzrFwbjO/m/Bw4VFPBa5WKgh/MCB2i/ZkKh4ZuZED7O4kIiN1KpDo18IbPdPsRz3wZhXBXWvgUEKT6bRIPODXoWoa3ePUpjHY/AaYkDEVHLQiKlI0dByOgDlmBhqXleJOg+ZgzDS6FtHC+qqvDMqhCn9yltjXIImalJ8IDAqdU="
+	},
+	{
+		"nombre": "Luis",
+		"apellido": "Sol",
+		"nombreUsuario": "luisSol",
+		"contrasena": "20edda22c43f1f48ad93550b399c1234a433d9f871c62f186581125a8266770a",
+		"id": 11,
+		"salt": "45uF6s6JwSw7AdtbFNgorP7Y4TWHvwZLJ90zf2QPVUnDTzfeV+gwEQ7WNGnffCh1DlnI8xOT0vOowiq9g24QDRHaYtX2t3cl++IOy4ue2j0WQ1EWbS9+fE9prDXbsDuKD1/KtJyzcEsAXCR/+VHO5IG/RJRn7++13RnrpVDu4VI="
+	},
+	{
+		"nombre": "Luis",
+		"apellido": "Sol",
+		"nombreUsuario": "luisSol",
+		"contrasena": "23c3f6589f56b1aed52860cce1da3cd03c8fc68cd767c8185b0f7754ac703073",
+		"id": 12,
+		"salt": "eHpcaA0yWNJYvlMAEIvl01ft0brjtWKPAeO3e9exHkuQgivCZmhBmz+2Al8TN1uJ3MVm9/9Y9dv9hp7R9VQKgSpK5bUbkmVh47IxNFaHBy58aUdIAhnigLZ23B9XDU72rKPbfiTH0HQti9d2FdUwaqGt+mriRtUHy8/p2auPdnY="
+	},
+	{
+		"nombre": "Luis",
+		"apellido": "Sol",
+		"nombreUsuario": "luisSol",
+		"contrasena": "697b13e3b396e3dd2da738804170a9dde1e1b473f24316c5a4593914682abd63",
+		"id": 13,
+		"salt": "qCwiAHQ9AQJPTHI+V6/2sDjfOuU6OUlwbYePY1Phx6K0/zLMZoVpy+A5sc55hOC22PG+cAAgYWXMe2fpim+oP5ezHB0zfbdbB4PNMnoQekyzmPXjXjOKiU3AtsEly7RU/aXEd0AlBldz5fpqBM4JZWnvKBCN9D72egJ6pEpW7ng="
+	},
+	{
+		"nombre": "Luis",
+		"apellido": "Sol",
+		"nombreUsuario": "luisSol",
+		"contrasena": "6492d05596cdcc66c8974affe8bbc05dda937f5476750f7a1c1f8ae56d5a8c80",
+		"id": 14,
+		"salt": "aFmwgUNmsPD4aCvTEamgx1ACuFJ6BM8hRYFptjLbRaclmB4HNlwtckhZjQwfWmglAysp/1YwBVsPl/elPgoS0RUyoVbxeHHCdo97XoguewsRkLJNdJ8s28GnQh2pjmHlc/rGlwxrOxxpFHeTHW9IKczmvt+YspjhSy97FZDritg="
+	}
+]
