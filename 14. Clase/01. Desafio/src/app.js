@@ -16,7 +16,7 @@ app.use(express.json());
 app.use(express.urlencoded({extended:true}))
 
 
-const MONGO =  "mongodb+srv://bidabehere:bidabehere@cluster0.a5dcy.mongodb.net/Coder49995";
+const MONGO =  "mongodb+srv://";
 const connection = mongoose.connect(MONGO);
 
 
