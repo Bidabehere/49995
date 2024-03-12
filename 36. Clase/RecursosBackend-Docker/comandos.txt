@@ -1,0 +1,16 @@
+minikube start
+kubectl apply -f kubeusers.yaml
+kubectl get deployments
+minikube service list
+minikube service kubeservice
+
+kubectl get deployments 
+kubectl get pods
+kubectl get services
+
+docker context use default //error no encuentra minikube cluster default
+
+docker build -t usercreator .
+kubectl version --short
+kubectl cluster-info
+
