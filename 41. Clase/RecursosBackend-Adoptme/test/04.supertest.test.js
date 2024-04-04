@@ -85,7 +85,8 @@ describe( "Testing de App mascotas", ()=>{
     })
 
     describe("Test flujo Usuarios", ()=>{
-        beforeEach(async function(){
+        
+        before(async function(){
             await userModel.deleteMany({});
         })
     
@@ -101,25 +102,82 @@ describe( "Testing de App mascotas", ()=>{
 
         })
 
+        it("Debe loguear al usuario y devolver una cookie", async function () {
+            const mockUserLogin = {
+                email:"pedro@gmail.com",
+                password:"1234"
+            };
+            const responseLogin = await requester.post("/api/sessions/login").send(mockUserLogin);
+            const cookiResponse = responseLogin.headers["set-cookie"][0];
+            const cookieData = {
+                name: cookiResponse.split("=")[0],
+                value: cookiResponse.split("=")[1]
+            }
+            this.cookie = cookieData;
+            expect(this.cookie.name).to.be.equal("coderCookie");
+        })
+
+        it("Al llamar /current obtenemos la cookie y la informacion del usuario", async function () {
+            const currentResponse = await requester.get("/api/sessions/current").set("Cookie", [`${this.cookie.name}=${this.cookie.value}`]);
+            expect(currentResponse.body.payload.email).to.be.equal("pedro@gmail.com")
+        })
+
         it("Que el endpoint de unprotectedLogin devuelva una cookie de nombre unprotectedCookie.", async function (){
-            const credentialMock = {
+            const credentialMock2 = {
                 email: "pedro@gmail.com",
                 password:"1234"
             }
-            const response = await requester.get("/api/sessions/unprotectedLogin").send(credentialMock);
-            const cookiesResult = response.headers['set-cookie'];
-            expect(cookiesResult).to.be.ok;
+            const response = await requester.get("/api/sessions/unprotectedLogin").send(credentialMock2);
+            const cookiesResult = response.headers['set-cookie'][0];
+            //expect(cookiesResult).to.be.ok;
 
-            const name = cookiesResult.split('=')[0]; 
-            const value = cookiesResult.split('=')[1];
+            this.cookie ={
+               name: cookiesResult.split('=')[0],
+               value: cookiesResult.split('=')[1]
+            }
+ /*            console.log("this.cookie");
+            console.log(this.cookie);
+            console.log("this.cookie"); */
 
-            expect(value).to.be.ok;
-            expect(name).to.be.equal('unprotectedCookie')
+            expect(this.cookie.value).to.be.ok;
+            expect(this.cookie.name).to.be.equal('unprotectedCookie')
         })
+
         it("Que el endpoint unprotectedCurrent devuelva al usuario completo.", async function (){
-            const response = (await requester.get("api/sessions/unprotectedCurrent")).set('Cookie',`${name}=${value}`)
+            //const response = await requester.get("/api/sessions/unprotectedCurrent").set('Cookie',[`${this.cookie.name}=${this.cookie.value}`])
+            //expect(response.body.payload.email).to.be.equal("pedro@gmail.com")
+            
+            const { _body: { payload } } = await requester.get("/api/sessions/unprotectedCurrent").set('Cookie',[`${this.cookie.name}=${this.cookie.value}`])
             expect(payload.email).to.be.equal("pedro@gmail.com")
+            
         })
 
     })
+
+    describe("Carga de imagen", ()=>{
+        
+        beforeEach(async function(){
+            await petModel.deleteMany({})
+        })
+
+        it("Debe poder crearse una mascota con la ruta de la imagen", async function(){
+
+            const petMock={
+                name:"Pelusa",
+                specie:"Gato",
+                birthDate:"02-11-2020"
+            };
+
+            const response = await requester.post("/api/pets/withimage")
+            .field("name", petMock.name)
+            .field("specie",petMock.specie)
+            .field("birthDate", petMock.birthDate)
+            .attach("image", "./test/images/gato.jpg");
+            
+            expect(response.statusCode).to.be.equal(200);
+            //expect(response.body.payload.image).to.be.ok;
+        })
+            
+    })
+
 })
